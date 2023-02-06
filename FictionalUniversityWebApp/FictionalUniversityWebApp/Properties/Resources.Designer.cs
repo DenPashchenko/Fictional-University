@@ -79,6 +79,15 @@ namespace FictionalUniversityWebApp.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You may delete only empty courses!.
+        /// </summary>
+        internal static string NotEmptyCourseMessage {
+            get {
+                return ResourceManager.GetString("NotEmptyCourseMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to You may delete only empty groups!.
         /// </summary>
         internal static string NotEmptyGroupMessage {

@@ -123,6 +123,9 @@
   <data name="GroupsNull" xml:space="preserve">
     <value>Entity set 'EducationDBContext.Groups'  is null.</value>
   </data>
+  <data name="NotEmptyCourseMessage" xml:space="preserve">
+    <value>You may delete only empty courses!</value>
+  </data>
   <data name="NotEmptyGroupMessage" xml:space="preserve">
     <value>You may delete only empty groups!</value>
   </data>
