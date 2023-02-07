@@ -1,0 +1,37 @@
+﻿@model IEnumerable<FictionalUniversityWebApp.Models.Group>
+
+@{
+	ViewData["Title"] = "Groups in the course";
+}
+
+<h3>The course @Html.DisplayFor(model => model.FirstOrDefault().Course.Name) includes such group(s):</h3>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model => model.Name)
+			</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>
+					@Html.ActionLink(item.Name, "StudentSelection", "Student", new { id = item.GroupId }, null)
+				</td>
+				<td>
+					<a asp-action="Edit" asp-route-id="@item.GroupId">Edit</a> |
+					<a asp-action="Details" asp-route-id="@item.GroupId">Details</a> |
+					<a asp-action="Delete" asp-route-id="@item.GroupId">Delete</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
+
+<p>
+	<a href="javascript:history.back()">Back to previous page</a>
+</p>
