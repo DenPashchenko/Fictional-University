@@ -1,6 +1,6 @@
-# Task 9
+# Fictional University
 
-## ASP.NET Core MVC application - Fictional University Web App
+## ASP.NET Core MVC Web App
 
 The application allows to work with university database. There are related Courses, Groups and Students tables in it.
 You can perform all of CRUD operations.
